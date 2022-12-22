@@ -1,0 +1,543 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="title_inner d-flex">
+        <div class="location">
+          <h2 class="d-flex">
+            <ion-icon class="zmdi zmdi-pin ion-text-start"></ion-icon>
+            <span>Wallington</span>
+          </h2>
+        </div>
+        <h2 class="docto">DoctoWorld</h2>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+
+  <div class="banner">
+    <swiper
+      [initialSlide]="0"
+      [slidesPerView]="1"
+      [pagination]="true"
+      [loop]="true"
+      [zoom]="true"
+      [speed]="1000"
+    >
+      <ng-template swiperSlide>
+        <img
+          src="assets/images/Doctoworld/banner_doctor1.png"
+          class="banner_img"
+        />
+        <div class="banner_text">
+          <span class="doctor">Consult with expert doctors..</span>
+          <br />
+          <div class="book">
+            <span class="book">Book your Appointment Now</span>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img
+          src="assets/images/Doctoworld/banner_doctor2.png"
+          class="banner_img"
+        />
+        <div class="banner_text">
+          <span class="doctor">Consult with expert doctors..</span>
+          <br />
+          <div class="book">
+            <span class="book">Book your Appointment Now</span>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img
+          src="assets/images/Doctoworld/banner_doctor3.png"
+          class="banner_img"
+        />
+        <div class="banner_text">
+          <span class="doctor">Consult with expert doctors..</span>
+          <br />
+          <div class="book">
+            <span class="book">Book your Appointment Now</span>
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+    <div class="banner_text">
+      <h3 class="animate__animated animate__fadeInUp">
+        {{'hello' | translate}}, Sam Smith,
+      </h3>
+      <h2 class="animate__animated animate__fadeInUp">
+        {{'find_doctors' | translate}}
+      </h2>
+    </div>
+    <div class="search_box d-flex animate__animated animate__fadeInUp">
+      <ion-icon name="search-outline" class="ion-text-start"></ion-icon>
+      <h2>{{'Doctors, specialities, clinic, hospital...' | translate}}</h2>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="shop_by_category animate__animated animate__fadeInUp">
+    <div class="scroll-x animate__animated animate__fadeInUp">
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Doctors.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Dentists.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Ayurvadic.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Therapist.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Doctors.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Dentists.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Ayurvadic.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Therapist.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Doctors.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Dentists.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Ayurvadic.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Therapist.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Doctors.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Dentists.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Ayurvadic.png" class="crop_img" />
+        </div>
+      </div>
+      <div
+        class="category animate__animated animate__zoomIn"
+        (click)="list_of_doctors()"
+      >
+        <div class="category_img center_img">
+          <img src="assets/images/Doctoworld/Therapist.png" class="crop_img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-list lines="none">
+    <h2 class="animate__animated animate__fadeInUp">
+      {{'list_of_specialities' | translate}}
+    </h2>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Adolescent medicine specialist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Addiction psychiatrist</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+    <ion-item
+      class="animate__animated animate__fadeInUp"
+      (click)="list_of_doctors()"
+    >
+      <h3>Allergist (immunologist)</h3>
+      <h4 slot="end">
+        <ion-icon class="zmdi zmdi-chevron-right ion-text-end"></ion-icon>
+      </h4>
+    </ion-item>
+  </ion-list>
+</ion-content>

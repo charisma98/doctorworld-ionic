@@ -1,0 +1,1731 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+      &nbsp; Saved Items
+    </ion-buttons>
+    <ion-title>
+      <div class="title_inner d-flex">
+        <span class="end cart_icon" (click)="cart()">
+          <ion-icon class="zmdi zmdi-shopping-cart ion-text-start"></ion-icon>
+          <ion-badge>1</ion-badge>
+        </span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg_color">
+  <div class="item_row">
+    <ion-segment (ionChange)="segmentChanged($event)" value="herbal">
+      <ion-segment-button value="herbal">
+        <ion-label> Herbal </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="masseuse">
+        <ion-label> Masseuse </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="studio">
+        <ion-label> Massage studio </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <ion-list
+      class="animate__animated animate__slideInUp animate__fast"
+      *ngIf="segment === 'herbal'"
+    >
+      <ion-row>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med1.png" />
+              </div>
+              <h2>
+                Salospir 100mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med2.png" />
+              </div>
+              <h2>
+                Xanical 120mg <br />
+                Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med3.png" />
+              </div>
+              <h2>
+                Allergy Relief <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$4.00</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <div class="prescription_required">
+                <img src="assets/images/Doctoworld/px.png" />
+              </div>
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med4.png" />
+              </div>
+              <h2>
+                Arber OTC <br />
+                Topcare Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med5.png" />
+              </div>
+              <h2>
+                Non Drosy <br />
+                Laritin Tablet
+              </h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+
+        <ion-col class="animate__animated animate__zoomIn" size="6">
+          <div class="item ion-text-center">
+            <div class="item_content" (click)="item_info()">
+              <!--
+                      <div class="prescription_required">
+                          <img src="assets/images/Doctoworld/px.png">
+                      </div>
+              -->
+              <div class="img_box">
+                <img src="assets/images/Doctoworld/med6.png" />
+              </div>
+              <h2>CoricidinHBP 100mg <br />Tablet</h2>
+            </div>
+            <div class="item_footer d-flex">
+              <h3 class="ion-text-center">$3.50</h3>
+              <h4 class="ion-text-center end">
+                <span> Add to Cart</span>
+              </h4>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+    <!--    must have to custom     -->
+    <ion-list
+      class="ion_list animate__animated animate__slideInUp animate__fast"
+      *ngIf="segment === 'masseuse'"
+    >
+      <ion-item
+        class="animate__animated animate__fadeInUp"
+        (click)="doctor_profile()"
+      >
+        <div class="item_inner d-flex">
+          <div class="img_box center_img">
+            <img src="assets/images/Doctoworld/doc1.png" class="crop_img" />
+          </div>
+          <div class="text_box">
+            <h2>Dr. Joseph Williamson</h2>
+            <h3>
+              Cardiac Surgeon <span>{{'at' | translate}}</span> Apple Hospital
+            </h3>
+            <ion-row>
+              <ion-col size="4">
+                <h2>
+                  {{'exp' | translate}}&nbsp;<strong
+                    >22 {{'years' | translate}}</strong
+                  >
+                </h2>
+              </ion-col>
+              <ion-col size="3">
+                <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong></h2>
+              </ion-col>
+
+              <ion-col size="5" class="d-flex">
+                <h2 class="end">
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star"></ion-icon>
+                  &nbsp; (152)
+                </h2>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item
+        class="animate__animated animate__fadeInUp"
+        (click)="doctor_profile()"
+      >
+        <div class="item_inner d-flex">
+          <div class="img_box center_img">
+            <img src="assets/images/Doctoworld/doc2.png" class="crop_img" />
+          </div>
+          <div class="text_box">
+            <h2>Dr. Angline Taylor</h2>
+            <h3>
+              Cardiac Surgeon <span>{{'at' | translate}}</span> Operum Clinics
+            </h3>
+            <ion-row>
+              <ion-col size="4">
+                <h2>
+                  {{'exp' | translate}}&nbsp;<strong
+                    >22 {{'years' | translate}}</strong
+                  >
+                </h2>
+              </ion-col>
+              <ion-col size="3">
+                <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong></h2>
+              </ion-col>
+
+              <ion-col size="5" class="d-flex">
+                <h2 class="end">
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  &nbsp; (240)
+                </h2>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item
+        class="animate__animated animate__fadeInUp"
+        (click)="doctor_profile()"
+      >
+        <div class="item_inner d-flex">
+          <div class="img_box center_img">
+            <img src="assets/images/Doctoworld/doc3.png" class="crop_img" />
+          </div>
+          <div class="text_box">
+            <h2>Dr. Anthony Peterson</h2>
+            <h3>
+              Cardiac Surgeon <span>{{'at' | translate}}</span> Opus Hospital
+            </h3>
+            <ion-row>
+              <ion-col size="4">
+                <h2>
+                  {{'exp' | translate}}&nbsp;<strong
+                    >22 {{'years' | translate}}</strong
+                  >
+                </h2>
+              </ion-col>
+              <ion-col size="3">
+                <h2>{{'fees' | translate}}&nbsp;<strong>$30</strong></h2>
+              </ion-col>
+
+              <ion-col size="5" class="d-flex">
+                <h2 class="end">
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  <ion-icon class="zmdi zmdi-star active"></ion-icon>
+                  &nbsp; (199)
+                </h2>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <ion-list
+      class="animate__animated animate__slideInUp animate__fast"
+      *ngIf="segment === 'studio'"
+    >
+    </ion-list>
+  </div>
+</ion-content>

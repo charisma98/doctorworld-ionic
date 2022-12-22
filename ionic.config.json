@@ -1,0 +1,7 @@
+{
+  "name": "doctorWorld",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

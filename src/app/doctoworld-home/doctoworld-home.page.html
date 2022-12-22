@@ -1,0 +1,281 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      <div class="title_inner d-flex">
+        <ion-grid [fixed]="true">
+          <ion-row class="title_inner ion-align-items-center">
+            <ion-col class="location ion-text-start">
+              <ion-icon class="zmdi zmdi-pin ion-text-start"></ion-icon>
+              <span>Wallington</span>
+            </ion-col>
+            <ion-col>
+              <h2>Medicine</h2>
+            </ion-col>
+            <ion-col>
+              <span class="end cart_icon ion-text-end" (click)="cart()">
+                <ion-icon
+                  class="zmdi zmdi-shopping-cart ion-text-start"
+                ></ion-icon>
+                <ion-badge>1</ion-badge>
+              </span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+
+  <div class="banner">
+    <swiper
+      [initialSlide]="0"
+      [slidesPerView]="1"
+      [pagination]="true"
+      [loop]="true"
+      [zoom]="true"
+      [speed]="1000"
+    >
+      <ng-template swiperSlide>
+        <img src="assets/images/Doctoworld/banner1.png" class="banner1_img" />
+        <div class="banner_text1">
+          <span>We ensure the lowest and best price for each medicine</span>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="assets/images/Doctoworld/banner2.png" class="banner2_img" />
+        <div class="banner_text2">
+          <span>We ensure the lowest and best price for each medicine</span>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <img src="assets/images/Doctoworld/banner3.png" class="banner3_img" />
+        <div class="banner_text3">
+          <span>We ensure the lowest and best price for each medicine</span>
+        </div>
+      </ng-template>
+    </swiper>
+    <div class="search_box d-flex animate__animated animate__fadeInUp">
+      <ion-icon name="search-outline" class="ion-text-start"></ion-icon>
+      <h2>{{'search_medicines' | translate}}</h2>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="content">
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img src="assets/images/Doctoworld/Otc.png" class="crop_img" />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Diabetes_Medicine.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Baby_Mother.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Wellness_Items.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Personal_Care.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img src="assets/images/Doctoworld/Otc.png" class="crop_img" />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Diabetes_Medicine.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Baby_Mother.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Personal_Care.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Wellness_Items.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img src="assets/images/Doctoworld/Otc.png" class="crop_img" />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Diabetes_Medicine.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img src="assets/images/Doctoworld/Otc.png" class="crop_img" />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Diabetes_Medicine.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Baby_Mother.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Wellness_Items.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Personal_Care.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img src="assets/images/Doctoworld/Otc.png" class="crop_img" />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Diabetes_Medicine.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Baby_Mother.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="category" (click)="categories()">
+            <div class="category_img">
+              <img
+                src="assets/images/Doctoworld/Personal_Care.png"
+                class="crop_img"
+              />
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
